@@ -30,7 +30,7 @@
 // |--------+------+------+------+------+------|  [{  |       |  ]}  |------+------+------+------+------+--------|
 // | LShift |   Z  |   X  |   C  |   V  |   B  |      |       |      |   N  |   M  | ,  < | . >  | /  ? |  - _   |
 // `--------+------+------+------+------+-------------'       `-------------+------+------+------+------+--------'
-//   |  L1  | ALT  | GUI  |  L3  | GUI    |                               |   L2   |  (   |  )   |  [   |  ]   |
+//   |  L3  | ALT  | GUI  |  L2  |  L1    |                               |   L2   |  (   |  )   |  [   |  ]   |
 //   `------------------------------------'                               '-----------------------------------'
 //                                    ,---------------.       ,---------------.
 //                                    | PgUp  | PgDn  |       | Home  | End   |
@@ -44,7 +44,7 @@
 &kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &kp LPAR                         &kp RPAR   &kp Y      &kp U     &kp I      &kp O     &kp P      &kp BACKSLASH
 &kp LCTRL  &kp A     &kp S     &kp D   &kp F   &kp G   &kp LBKT                         &kp RBKT   &kp H      &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN  &kp HOME   &kp END    &kp N      &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp MINUS
-&mo LOWER  &kp LALT  &kp LGUI  &mo ADJUST   &kp LGUI   &kp LALT   &kp LGUI   &kp ENTER  &kp SPACE  &mo RAISE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
+&mo ADJUST  &kp LALT  &kp LGUI &mo RAISE &mo LOWER     &kp LALT   &kp LGUI   &kp ENTER  &kp SPACE  &mo RAISE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
             >;
 
         };
@@ -59,13 +59,13 @@
 // |--------+------+------+------+------+------|      |       |      |------+------+------+------+------+--------|
 // |        | Esc  | GUI  | COPY |PASTE |  `~  |      |       |      |   \  |   1  |  2   |  3   | RET  |  RET   |
 // `--------+------+------+------+------+-------------'       `-------------+------+------+------+------+--------'
-//   |      |      |      |      |        |                               |   L3   |      |      |      |      |
+//   |      |      |      |      |        |                               |        |  0   |      |      |      |
 //   `------------------------------------'                               '-----------------------------------'
 //                                    ,---------------.       ,---------------.
 //                                    |       |       |       |       |       |
 //                                    ,-------|-------|       ,-------|-------|
 //                                    |       |       |       |       |       |
-//                                    |       |       |       |       |   0   |
+//                                    |       |       |       |       |       |
 //                                    |       |       |       |       |       |
 //                                    `---------------`       `---------------`
             bindings = <
@@ -73,7 +73,7 @@
    &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans               &trans &kp N6          &kp N7    &kp N8    &kp N9    &kp N0      &kp DEL
    &trans  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &trans               &trans &kp KP_MULTIPLY &kp N4    &kp N5    &kp N6    &kp KP_PLUS &kp KP_MINUS
    &trans  &kp ESC   &kp LGUI  &kp LG(C) &kp LG(V) &kp GRAVE &trans &trans &trans &trans &kp KP_DIVIDE   &kp N1    &kp N2    &kp N3    &kp RET     &kp RET
-   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &kp N0          &mo 3            &trans    &trans    &trans      &trans
+   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &trans          &trans           &kp N0    &trans    &trans      &trans
             >;
         };
 
@@ -88,27 +88,27 @@
 // ,-------------------------------------------.                     ,-------------------------------------------.
 // |        |      |      |      |      |      |                     |      |      |      |      |      |        |
 // |--------+------+------+------+------+-------------.       ,------+------+------+------+------+------+--------|
-// |  ESC   |   !  |   @  |   #  |   $  |   %  |      |       |      |   ^  |  &   |  *   |  (   |  )   |  DEL   |
+// |  ESC   |   !  |   @  |   #  |  $   |  %   |      |       |      |   ^  |  &   |  *   |  (   |  )   |  DEL   |
 // |--------+------+------+------+------+------|------|       |------|------+------+------+------+------+--------|
-// |        |   -  |   =  |  [   |   ]  |   \  |      |       |      | Home | PgUp |  5   |  UP  |  +   |   ~    |
+// |        |   -  |   =  |  [   |  ]   |  |   |      |       |      | Left | Down |  Up  |Right |  `   |   ~    |
 // |--------+------+------+------+------+------|      |       |      |------+------+------+------+------+--------|
-// |        | Esc  | GUI  | COPY |PASTE |  `~  |      |       |      | End  | PgDn | LEFT | DOWN |RIGHT |  RET   |
+// |        | Esc  | GUI  |  (   |  )   |  ~   |      |       |      |      |      |      |      |      |        |
 // `--------+------+------+------+------+-------------'       `-------------+------+------+------+------+--------'
-//   |      |      |      |  L3  |        |                               |        |      |      |      |      |
+//   |      |      |      |      |        |                               |        |      |      |      |      |
 //   `------------------------------------'                               '-----------------------------------'
 //                                    ,---------------.       ,---------------.
 //                                    |       |       |       |       |       |
 //                                    ,-------|-------|       ,-------|-------|
 //                                    |       |       |       |       |       |
-//                                    |  L3   |       |       |       |       |
+//                                    |       |       |       |       |       |
 //                                    |       |       |       |       |       |
 //                                    `---------------`       `---------------`
             bindings = <
-   &trans  &trans    &trans   &trans   &trans   &trans                                &trans    &trans    &trans    &trans   &trans    &trans
-   &kp ESC &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT &trans               &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &kp DEL
-   &trans  &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE  &trans               &trans &kp HOME  &kp PG_UP &kp PSCRN &kp UP   &kp GRAVE &kp TILDE
-   &trans  &kp ESC   &kp LGUI &kp LPAR &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RET
-   &trans  &trans    &trans   &mo 3         &trans        &mo 3  &trans &trans &trans        &trans       &trans    &trans   &trans    &trans
+   &trans  &trans    &trans   &trans   &trans   &trans                                &trans    &trans    &trans    &trans    &trans    &trans
+   &kp ESC &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT &trans               &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
+   &trans  &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE  &trans               &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
+   &trans  &kp ESC   &kp LGUI &kp LPAR &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &trans    &trans    &trans    &trans
+   &trans  &trans    &trans   &trans        &trans        &trans &trans &trans &trans        &trans       &trans    &trans    &trans    &trans
             >;
         };
         
