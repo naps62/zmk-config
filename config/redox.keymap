@@ -30,13 +30,13 @@
 // |--------+------+------+------+------+------|  [{  |       |  ]}  |------+------+------+------+------+--------|
 // | LShift |   Z  |   X  |   C  |   V  |   B  |      |       |      |   N  |   M  | ,  < | . >  | /  ? |  - _   |
 // `--------+------+------+------+------+-------------'       `-------------+------+------+------+------+--------'
-//   |  L3  | ALT  | GUI  |  L2  |  L1    |                               |   L2   |  (   |  )   |  [   |  ]   |
+//   |  L3  |  `~  | GUI  |  L2  |  L1    |                               | Space  |  (   |  )   |  [   |  ]   |
 //   `------------------------------------'                               '-----------------------------------'
 //                                    ,---------------.       ,---------------.
 //                                    | PgUp  | PgDn  |       | Home  | End   |
 //                                    ,-------|-------|       ,-------|-------|
 //                                    |       |       |       |       |       |
-//                                    |  Alt  |  GUI  |       | Enter | Space |
+//                                    |  Alt  |  GUI  |       |  L2   | Enter |
 //                                    |       |       |       |       |       |
 //                                    `---------------`       `---------------`
             bindings = <
@@ -44,7 +44,7 @@
 &kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &kp LPAR                         &kp RPAR   &kp Y      &kp U     &kp I      &kp O     &kp P      &kp BACKSLASH
 &kp LCTRL  &kp A     &kp S     &kp D   &kp F   &kp G   &kp LBKT                         &kp RBKT   &kp H      &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN  &kp HOME   &kp END    &kp N      &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp MINUS
-&mo ADJUST  &kp LALT  &kp LGUI &mo RAISE &mo LOWER     &kp LALT   &kp LGUI   &kp ENTER  &kp SPACE  &mo RAISE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
+&mo ADJUST &kp GRAVE &kp LGUI &mo RAISE &mo LOWER     &kp LALT   &kp LGUI   &kp RAISE  &kp ENTER  &mo SPACE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
             >;
 
         };
