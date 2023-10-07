@@ -156,7 +156,7 @@
         bindings = <
    &kp F1  &kp F2     &kp F3      &kp F4      &kp F5           &kp F6                               &trans       &trans       &trans       &trans       &trans        &trans
    &none   &none      &none       &none       &none            &none  &bootloader       &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &out OUT_TOG
-   &none   &none      &none       &none       &none            &none  &reset            &bootloader &none        &none        &none        &none        &none         &none
+   &none   &none      &none       &none       &none            &none  &sys_reset        &bootloader &none        &none        &none        &none        &none         &none
    &none   &none      &none       &none       &none            &none  &none &none &none &none       &none        &none        &none        &none        &none         &none
    &none   &none      &none       &none              &none            &none &none &none &none             &none               &none        &none        &none         &none
             >;
