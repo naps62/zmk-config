@@ -60,7 +60,7 @@
 // |--------+------+------+------+------+------|      |       |      |------+------+------+------+------+--------|
 // |        | Esc  | GUI  | COPY |PASTE |  `~  |      |       |      |   \  |   1  |  2   |  3   | RET  |  RET   |
 // `--------+------+------+------+------+-------------'       `-------------+------+------+------+------+--------'
-//   |      |      |      |      |        |                               |        |  0   |      |      |      |
+//   |      |      |      |      |        |                               |        |  0   | NLCK |      |      |
 //   `------------------------------------'                               '-----------------------------------'
 //                                    ,---------------.       ,---------------.
 //                                    |       |       |       |       |       |
@@ -74,7 +74,7 @@
    &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans               &trans &kp N6          &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp N0      &kp DEL
    &trans  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &trans               &trans &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS &kp KP_MINUS
    &trans  &kp ESC   &kp LGUI  &kp LG(C) &kp LG(V) &kp GRAVE &trans &trans &trans &trans &kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp RET     &kp RET
-   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &trans          &trans           &kp KP_N0    &trans    &trans      &trans
+   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &trans          &trans           &kp KP_N0    &kp KP_NLCK &trans      &trans
             >;
         };
 
