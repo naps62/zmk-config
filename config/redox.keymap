@@ -43,10 +43,10 @@
             bindings = <
 &kp ESC     &kp N1    &kp N2    &kp N3  &kp N4  &kp N5                                              &kp N6     &kp N7    &kp N8     &kp N9    &kp N0     &kp BSPC
 &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T   &mo BT                           &kp RPAR   &kp Y      &kp U     &kp I      &kp O     &kp P      &kp BACKSLASH
-// Dictation push-to-talk. Sent as a modified F12 rather than F13: F13 reaches
-// evdev but xkb drops it, so Wayland apps never see it and OpenWhispr's hotkey
+// Dictation push-to-talk. A real modified keycode, not F13: F13 reaches evdev
+// but xkb drops it, so Wayland apps never see it and OpenWhispr's hotkey
 // capture can't record it.
-&kp LCTRL   &kp A     &kp S     &kp D   &kp F   &kp G   &kp LC(LA(LS(F12)))              &kp LC(LA(LS(F12)))  &kp H  &kp J  &kp K   &kp L     &kp SEMI   &kp SQT
+&kp LCTRL   &kp A     &kp S     &kp D   &kp F   &kp G   &kp LA(LS(P))                    &kp LA(LS(P))        &kp H  &kp J  &kp K   &kp L     &kp SEMI   &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN  &kp HOME   &kp END    &kp N      &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp MINUS
 &mo CONTROL &kp GRAVE &kp LGUI &mo RAISE &mo LOWER      &kp LALT   &kp LGUI   &kp ENTER  &kp SPACE  &mo RAISE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
             >;
