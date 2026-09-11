@@ -46,7 +46,7 @@
 // Dictation push-to-talk. A real modified keycode, not F13: F13 reaches evdev
 // but xkb drops it, so Wayland apps never see it and OpenWhispr's hotkey
 // capture can't record it.
-&kp LCTRL   &kp A     &kp S     &kp D   &kp F   &kp G   &kp LA(LS(P))                    &kp LA(LS(P))        &kp H  &kp J  &kp K   &kp L     &kp SEMI   &kp SQT
+&kp LCTRL   &kp A     &kp S     &kp D   &kp F   &kp G   &kp LA(LS(F12))                    &kp LA(LS(F12))        &kp H  &kp J  &kp K   &kp L     &kp SEMI   &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN  &kp HOME   &kp END    &kp N      &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp MINUS
 &mo CONTROL &kp GRAVE &kp LGUI &mo RAISE &mo LOWER      &kp LALT   &kp LGUI   &kp ENTER  &kp SPACE  &mo RAISE  &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT
             >;
